@@ -16,44 +16,44 @@
 		</script>
 
 		<!-- Required for non-UTF encodings -->
-		<script src="libs/encoding.js"></script>
+		<script src="/libs/encoding.js"></script>
 		<!-- Load config scripts separately because compiled-method-cache.js
      - depends on them. -->
-		<script type="text/javascript" src="config/default.js" defer></script>
-		<script type="text/javascript" src="config/runtests.js" defer></script>
-		<script type="text/javascript" src="config/build.js" defer></script>
-		<script type="text/javascript" src="config/urlparams.js" defer></script>
+		<script type="text/javascript" src="/config/default.js" defer></script>
+		<script type="text/javascript" src="/config/runtests.js" defer></script>
+		<script type="text/javascript" src="/config/build.js" defer></script>
+		<script type="text/javascript" src="/config/urlparams.js" defer></script>
 
 
-		<!--<script type="text/javascript" src="libs/terminal.js" defer></script>-->
+		<!--<script type="text/javascript" src="/libs/terminal.js" defer></script>-->
 
 		<!-- Load promise-6.0.0.js and IndexedDB-getAll-shim.js separately
      - because compiled-method-cache.js depends on them. -->
-		<script type="text/javascript" src="libs/promise-6.0.0.js" defer></script>
-		<script type="text/javascript" src="polyfill/IndexedDB-getAll-shim.js" defer></script>
+		<script type="text/javascript" src="/libs/promise-6.0.0.js" defer></script>
+		<script type="text/javascript" src="/polyfill/IndexedDB-getAll-shim.js" defer></script>
 
 		<!-- Load compiled-method-cache.js separately because j2me.js depends on it. -->
-		<script type="text/javascript" src="libs/compiled-method-cache.js" defer></script>
+		<script type="text/javascript" src="/libs/compiled-method-cache.js" defer></script>
 
 		<!-- Load bld/native.js separately because adding it to main-all.js
      - throws an "asm.js type error". -->
-		<script type="text/javascript" src="bld/native.js" defer></script>
+		<script type="text/javascript" src="/bld/native.js" defer></script>
 
 		<!-- Load j2me.js separately because classes.jar.js depends on it (it adds
      - members to the AOTMD hash that j2me.js defines); and also so its source
      - map gets loaded by the debugger. -->
-		<script type="text/javascript" src="bld/j2me.js" defer></script>
+		<script type="text/javascript" src="/bld/j2me.js" defer></script>
 
 		<!-- Run `make aot` to generate these.  Load them separately, because adding
      - classes.jar.js to main-all.js fails silently for unknown reasons. -->
-		<!--<script type="text/javascript" src="bld/classes.jar.js" defer></script>-->
-		<!--<script type="text/javascript" src="bld/program.jar.js" defer></script>-->
-		<!--<script type="text/javascript" src="bld/tests.jar.js" defer></script>-->
+		<!--<script type="text/javascript" src="/bld/classes.jar.js" defer></script>-->
+		<!--<script type="text/javascript" src="/bld/program.jar.js" defer></script>-->
+		<!--<script type="text/javascript" src="/bld/tests.jar.js" defer></script>-->
 
 		<!-- Load the rest of the scripts from the combined script main-all.js
      - to improve startup and runtime performance.  See Makefile for the list
      - of files that get combined into this one. -->
-		<script type="text/javascript" src="bld/main-all.js" defer></script>
+		<script type="text/javascript" src="/bld/main-all.js" defer></script>
 
 	</head>
 	<body>
@@ -296,95 +296,95 @@
 						name: "Anyview",
 						jarName: "Anyview4.0.jar",
 						midletClassName: "com.ismyway.anyview.Anyview",
-						picPath: "img/anyview.png"
+						picPath: "/img/anyview.png"
 					},
 					{
 						name: "狂野飙车6",
 						jarName: "kybc6.jar",
 						midletClassName: "GloftASP6",
-						picPath: "img/kybc6.png"
+						picPath: "/img/kybc6.png"
 					},
 					{
 						name: "植物大战僵尸",
 						jarName: "pvz.jar",
 						midletClassName: "Game",
-						picPath: "img/pvz.png"
+						picPath: "/img/pvz.png"
 					},
 					{
 						name: "刺客信条3",
 						jarName: "ckxt3.jar",
 						midletClassName: "GloftASBR",
-						picPath: "img/ckxt3.png"
+						picPath: "/img/ckxt3.png"
 					},
 					{
 						name: "开心农场",
 						jarName: "kxnc.jar",
 						midletClassName: "FarmMIDlet",
-						picPath: "img/kxnc.png"
+						picPath: "/img/kxnc.png"
 					},
 					{
 						name: "RF18",
 						jarName: "rf18.jar",
 						midletClassName: "GloftR8FP",
-						picPath: "img/rf18.png"
+						picPath: "/img/rf18.png"
 					},
 					{
 						name: "BounceTales",
 						jarName: "BounceTales.jar",
 						midletClassName: "RMIDlet",
-						picPath: "img/BounceTales.png"
+						picPath: "/img/BounceTales.png"
 					},
 					{
 						name: "极限拉力赛2",
 						jarName: "jxlls.jar",
 						midletClassName: "baltorogames.system.Application",
-						picPath: "img/jxlls.png"
+						picPath: "/img/jxlls.png"
 					},
 					{
 						name: "斗地主",
 						jarName: "ddz.jar",
 						midletClassName: "GameMidlet",
-						picPath: "img/ddz.png"
+						picPath: "/img/ddz.png"
 					},
 					{
 						name: "GTA5",
 						jarName: "gta.jar",
 						midletClassName: "SaintsRow2",
-						picPath: "img/gta.png"
+						picPath: "/img/gta.png"
 					},
 					{
 						name: "涂鸦跳跃",
 						jarName: "tyty.jar",
 						midletClassName: "S",
-						picPath: "img/tyty.png"
+						picPath: "/img/tyty.png"
 					},{
 						name: "中国象棋",
 						jarName: "chess.jar",
 						midletClassName: "com.chess.Tmpmidlet",
-						picPath: "img/chess.png"
+						picPath: "/img/chess.png"
 					},
 					{
 						name: "模拟人生3",
 						jarName: "sim3.jar",
 						midletClassName: "com.ea.sims3.MonkeyApp",
-						picPath: "img/sim3.png"
+						picPath: "/img/sim3.png"
 					},
 					{
 						name: "韩版开心农场",
 						jarName: "kxnckr.jar",
 						midletClassName: "com.auer.title.GameMidlet",
-						picPath: "img/kxnckr.png"
+						picPath: "/img/kxnckr.png"
 					},
 					{
 						name: "侏罗纪公园-巨兽归来",
 						jarName: "dragon.jar",
 						midletClassName: "GloftJUPK",
-						picPath: "img/dragon.png"
+						picPath: "/img/dragon.png"
 					},
 					{
 						name: "鳄鱼小顽皮爱洗澡",
 						jarName: "WheresMyWater.jar",
-						picPath: "img/WheresMyWater.png",
+						picPath: "/img/WheresMyWater.png",
 						midletClassName: "xor.wimw.j2me.src.WIMWGameController"
 					}
 				]
@@ -562,9 +562,9 @@
 				function openJar(jarname, midletClassName, islocaljar) {
 					//var mycheck1=document.getElementById('mycheck1'); 
 					//var mycheck2=document.getElementById('mycheck2'); 
-					var href = 'main.html?jars=jar/' + jarname + '&jad=&midletClassName=' + midletClassName;
+					var href = '/main.html?jars=/jar/' + jarname + '&jad=&midletClassName=' + midletClassName;
 					if (islocaljar) {
-						href = 'main.html?localjar=' + jarname;
+						href = '/main.html?localjar=' + jarname;
 					}
 					//if(mycheck1.checked)
 					//{
@@ -657,12 +657,12 @@
 			</br>
 			</br>
 			</br>
-			<a href="indexbatch.html" style="float: right;">
+			<a href="/indexbatch.html" style="float: right;">
 				批量安装版本
 			</a>
 			</br>
 			</br>
-			<a href="updatelog.html" style="float: right;">
+			<a href="/updatelog.html" style="float: right;">
 				更新日志
 			</a>
 			</br>
@@ -696,7 +696,8 @@
 				}
 
 				select {
-					background-image: url(backdropdown.png);
+					background-image: url(/backdropdown.png);
+					background-image: url(/backdropdown.png);
 					background-position: 222px 9px;
 					font-family: Roboto;
 					font-size: 12px;
