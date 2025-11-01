@@ -16,44 +16,44 @@
         </script>
 
 		<!-- Required for non-UTF encodings -->
-		<script src="libs/encoding.js"></script>
+		<script src="/libs/encoding.js"></script>
 		<!-- Load config scripts separately because compiled-method-cache.js
      - depends on them. -->
-		<script type="text/javascript" src="config/default.js" defer></script>
-		<script type="text/javascript" src="config/runtests.js" defer></script>
-		<script type="text/javascript" src="config/build.js" defer></script>
-		<script type="text/javascript" src="config/urlparams.js" defer></script>
+		<script type="text/javascript" src="/config/default.js" defer></script>
+		<script type="text/javascript" src="/config/runtests.js" defer></script>
+		<script type="text/javascript" src="/config/build.js" defer></script>
+		<script type="text/javascript" src="/config/urlparams.js" defer></script>
 
 
-		<!--<script type="text/javascript" src="libs/terminal.js" defer></script>-->
+		<!--<script type="text/javascript" src="/libs/terminal.js" defer></script>-->
 
 		<!-- Load promise-6.0.0.js and IndexedDB-getAll-shim.js separately
      - because compiled-method-cache.js depends on them. -->
-		<script type="text/javascript" src="libs/promise-6.0.0.js" defer></script>
-		<script type="text/javascript" src="polyfill/IndexedDB-getAll-shim.js" defer></script>
+		<script type="text/javascript" src="/libs/promise-6.0.0.js" defer></script>
+		<script type="text/javascript" src="/polyfill/IndexedDB-getAll-shim.js" defer></script>
 
 		<!-- Load compiled-method-cache.js separately because j2me.js depends on it. -->
-		<script type="text/javascript" src="libs/compiled-method-cache.js" defer></script>
+		<script type="text/javascript" src="/libs/compiled-method-cache.js" defer></script>
 
 		<!-- Load bld/native.js separately because adding it to main-all.js
      - throws an "asm.js type error". -->
-		<script type="text/javascript" src="bld/native.js" defer></script>
+		<script type="text/javascript" src="/bld/native.js" defer></script>
 
 		<!-- Load j2me.js separately because classes.jar.js depends on it (it adds
      - members to the AOTMD hash that j2me.js defines); and also so its source
      - map gets loaded by the debugger. -->
-		<script type="text/javascript" src="bld/j2me.js" defer></script>
+		<script type="text/javascript" src="/bld/j2me.js" defer></script>
 
 		<!-- Run `make aot` to generate these.  Load them separately, because adding
      - classes.jar.js to main-all.js fails silently for unknown reasons. -->
-		<!--<script type="text/javascript" src="bld/classes.jar.js" defer></script>-->
-		<!--<script type="text/javascript" src="bld/program.jar.js" defer></script>-->
-		<!--<script type="text/javascript" src="bld/tests.jar.js" defer></script>-->
+		<!--<script type="text/javascript" src="/bld/classes.jar.js" defer></script>-->
+		<!--<script type="text/javascript" src="/bld/program.jar.js" defer></script>-->
+		<!--<script type="text/javascript" src="/bld/tests.jar.js" defer></script>-->
 
 		<!-- Load the rest of the scripts from the combined script main-all.js
      - to improve startup and runtime performance.  See Makefile for the list
      - of files that get combined into this one. -->
-		<script type="text/javascript" src="bld/main-all.js" defer></script>
+		<script type="text/javascript" src="/bld/main-all.js" defer></script>
 
 	</head>
 	<body>
@@ -370,7 +370,7 @@
 							var localjars = document.getElementById('localjars');
 							localjars.length = 0;
 							var gamepanel = document.getElementById("gamepanel");
-							gamepanel.innerHTML = '<a class="game" style="" href="javascript:void(0)" onclick="openJar(\'Anyview4.0.jar\',\'com.ismyway.anyview.Anyview\');"> <div style="height:64px;"> <img src="img/anyview.png"></img> </div> Anyview </a> ';
+							gamepanel.innerHTML = '<a class="game" style="" href="javascript:void(0)" onclick="openJar(\'Anyview4.0.jar\',\'com.ismyway.anyview.Anyview\');"> <div style="height:64px;"> <img src="/img/anyview.png"></img> </div> Anyview </a> ';
 							for (var i = 0; i < files.length; i++) {
 								var f = files[i];
 								//console.log(f)
@@ -567,9 +567,9 @@
 				function openJar(jarname, midletClassName, islocaljar) {
 					//var mycheck1=document.getElementById('mycheck1'); 
 					//var mycheck2=document.getElementById('mycheck2'); 
-					var href = 'main.html?jars=jar/' + jarname + '&jad=&midletClassName=' + midletClassName;
+					var href = '/main.html?jars=/jar/' + jarname + '&jad=&midletClassName=' + midletClassName;
 					if (islocaljar) {
-						href = 'main.html?localjar=' + jarname;
+						href = '/main.html?localjar=' + jarname;
 					}
 					//if(mycheck1.checked)
 					//{
@@ -618,7 +618,7 @@
 			<a class="game" style="" href="javascript:void(0)"
 				onclick="openJar('Anyview4.0.jar','com.ismyway.anyview.Anyview');">
 				<div style="height:64px;">
-					<img src="img/anyview.png"></img>
+					<img src="/img/anyview.png"></img>
 				</div>
 				Anyview
 			</a> 
@@ -675,12 +675,12 @@
 			</br>
 			</br>
 			</br>
-			<a href="index.html" style="float: right;">
+			<a href="/index.html" style="float: right;">
 				标准版本
 			</a>
 			</br>
 			</br>
-			<a href="updatelog.html" style="float: right;">
+			<a href="/updatelog.html" style="float: right;">
 				更新日志
 			</a>
 			</br>
@@ -716,7 +716,7 @@
 				}
 
 				select {
-					background-image: url(backdropdown.png);
+					background-image: url(/backdropdown.png);
 					background-position: 222px 9px;
 					font-family: Roboto;
 					font-size: 12px;
@@ -890,7 +890,7 @@
 				}
 
 				select {
-					background-image: url(backdropdown.png);
+					background-image: url(/backdropdown.png);
 					background-position: 222px 9px;
 					font-family: Roboto;
 					font-size: 12px;
