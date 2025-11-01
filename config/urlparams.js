@@ -48,4 +48,9 @@
   for (var name in params) {
     config[name] = params[name];
   }
+
+  if (config.jars && !config.jars.startsWith("http")) {
+    config.jars = config.jars.replace(/^\/?J2meJS\//, "");
+    config.jars = config.jars.split(":").map(j => "./" + j).join(":");
+  }
 })();

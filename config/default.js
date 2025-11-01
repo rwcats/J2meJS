@@ -41,7 +41,7 @@ var config = {
 // is the directory from which the page was loaded, but some test pages load
 // from a subdirectory, like tests/fs/, and they set this accordingly, so code
 // that loads files, like libs/fs-init.js, can load them from the right place.
-var APP_BASE_DIR = "/";
+var APP_BASE_DIR = "./";
 /* -*- Mode: Java; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /* vim: set shiftwidth=2 tabstop=2 autoindent cindent expandtab: */
 
