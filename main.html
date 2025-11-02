@@ -54,45 +54,41 @@
     </div>
 
     <!-- Controls -->
-    <div id="gamepad" class="flex-grow flex flex-col justify-between mt-4 text-white" onselectstart='return false'>
-      <!-- Action Buttons -->
-      <div class="flex justify-between px-2">
-        <button class="w-16 h-8 bg-gray-700 rounded-md text-sm transition hover:bg-gray-600">Trái</button>
-        <button class="w-16 h-8 bg-green-500 rounded-md text-sm transition hover:bg-green-600">Gọi</button>
-        <button class="w-16 h-8 bg-red-500 rounded-md text-sm transition hover:bg-red-600">Hủy</button>
-        <button class="w-16 h-8 bg-gray-700 rounded-md text-sm transition hover:bg-gray-600">Phải</button>
-      </div>
-
-      <!-- D-Pad -->
-      <div class="relative flex items-center justify-center my-2">
-        <div class="grid grid-cols-3 grid-rows-3 w-32 h-32">
-          <div class="col-start-2 row-start-1 flex justify-center items-center"><button class="w-10 h-10 bg-gray-700 rounded-md transition hover:bg-gray-600">▲</button></div>
-          <div class="col-start-1 row-start-2 flex justify-center items-center"><button class="w-10 h-10 bg-gray-700 rounded-md transition hover:bg-gray-600">◀</button></div>
-          <div class="col-start-2 row-start-2 flex justify-center items-center"><button class="w-10 h-10 bg-gray-600 rounded-md transition hover:bg-gray-500">OK</button></div>
-          <div class="col-start-3 row-start-2 flex justify-center items-center"><button class="w-10 h-10 bg-gray-700 rounded-md transition hover:bg-gray-600">▶</button></div>
-          <div class="col-start-2 row-start-3 flex justify-center items-center"><button class="w-10 h-10 bg-gray-700 rounded-md transition hover:bg-gray-600">▼</button></div>
+    <div class="flex-grow flex flex-col justify-between mt-4 text-white">
+      <div id="gamepad" onselectstart='return false' οnselect='document.selection.empty()'>
+        <div class="flex justify-between px-2">
+          <div class="pad-content"><button class="w-16 h-8 bg-gray-700 rounded-md text-sm transition hover:bg-gray-600">L</button></div>
+          <div class="pad-content"><button class="w-16 h-8 bg-green-500 rounded-md text-sm transition hover:bg-green-600">Call</button></div>
+          <div class="pad-content"><button class="w-16 h-8 bg-red-500 rounded-md text-sm transition hover:bg-red-600">Cancel</button></div>
+          <div class="pad-content"><button class="w-16 h-8 bg-gray-700 rounded-md text-sm transition hover:bg-gray-600">R</button></div>
         </div>
-      </div>
-
-      <!-- Numeric Keypad -->
-      <div class="grid grid-cols-3 gap-3 text-center">
-        <button class="key">1</button>
-        <button class="key">2 <span class="text-xs block opacity-70">ABC</span></button>
-        <button class="key">3 <span class="text-xs block opacity-70">DEF</span></button>
-        <button class="key">4 <span class="text-xs block opacity-70">GHI</span></button>
-        <button class="key">5 <span class="text-xs block opacity-70">JKL</span></button>
-        <button class="key">6 <span class="text-xs block opacity-70">MNO</span></button>
-        <button class="key">7 <span class="text-xs block opacity-70">PQRS</span></button>
-        <button class="key">8 <span class="text-xs block opacity-70">TUV</span></button>
-        <button class="key">9 <span class="text-xs block opacity-70">WXYZ</span></button>
-        <button class="key">*</button>
-        <button class="key">0 <span class="text-xs block opacity-70">+</span></button>
-        <button class="key">#</button>
+        <div class="relative flex items-center justify-center my-2">
+          <div class="grid grid-cols-3 grid-rows-3 w-32 h-32">
+            <div class="pad-content col-start-2 row-start-1 flex justify-center items-center"><button class="w-10 h-10 bg-gray-700 rounded-md transition hover:bg-gray-600">up</button></div>
+            <div class="pad-content col-start-1 row-start-2 flex justify-center items-center"><button class="w-10 h-10 bg-gray-700 rounded-md transition hover:bg-gray-600">left</button></div>
+            <div class="pad-content col-start-2 row-start-2 flex justify-center items-center"><button class="w-10 h-10 bg-gray-600 rounded-md transition hover:bg-gray-500">OK</button></div>
+            <div class="pad-content col-start-3 row-start-2 flex justify-center items-center"><button class="w-10 h-10 bg-gray-700 rounded-md transition hover:bg-gray-600">right</button></div>
+            <div class="pad-content col-start-2 row-start-3 flex justify-center items-center"><button class="w-10 h-10 bg-gray-700 rounded-md transition hover:bg-gray-600">down</button></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div class="pad-content"><button class="key">1</button></div>
+          <div class="pad-content"><button class="key">2 <span class="text-xs block opacity-70">ABC</span></button></div>
+          <div class="pad-content"><button class="key">3 <span class="text-xs block opacity-70">DEF</span></button></div>
+          <div class="pad-content"><button class="key">4 <span class="text-xs block opacity-70">GHI</span></button></div>
+          <div class="pad-content"><button class="key">5 <span class="text-xs block opacity-70">JKL</span></button></div>
+          <div class="pad-content"><button class="key">6 <span class="text-xs block opacity-70">MNO</span></button></div>
+          <div class="pad-content"><button class="key">7 <span class="text-xs block opacity-70">PQRS</span></button></div>
+          <div class="pad-content"><button class="key">8 <span class="text-xs block opacity-70">TUV</span></button></div>
+          <div class="pad-content"><button class="key">9 <span class="text-xs block opacity-70">WXYZ</span></button></div>
+          <div class="pad-content"><button class="key">*</button></div>
+          <div class="pad-content"><button class="key">0 <span class="text-xs block opacity-70">+</span></button></div>
+          <div class="pad-content"><button class="key">#</button></div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Hidden elements required by the emulator's scripts for functionality -->
   <div style="display: none;">
       <input id="File" type="file" />
       <div id="pageContainer"><pre id="consoleContainer"></pre></div>
